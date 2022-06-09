@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    scroll-behavior: smooth;
+    font: sans-serif;
+}
+
+html,
+body {
+    height: 100vh;
+    font-family: "Source Sans Pro", 'Times New Roman';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+} 
+
+/* HEADER */
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 80px;
+    margin: auto;
+    position: fixed;
+    background-color: #0080ed;
+    z-index: 1;
+    padding: 0 10%;
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 24px;
+    transition: all 250ms linear 0s;
+}
+
+header nav ul li a:hover {
+    background: rgba(255,255,255,0.15);
+}
+
+header .container img{
+    height: 30px;
+}
+
+input#checkbox-menu {
+    visibility: hidden;
+}
+
+/* MAIN */
+main {
+    margin-bottom: 100px;
+}
+
+main .container-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 980px;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+
+h2{
+    color: rgb(0,0,0);
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+h3{
+    color: rgb(131,131,131);
+    font-size: 20px;
+    line-height: 28px;
+    margin: 10px 0;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form input {
+    width: 380px;
+    padding-left: 15px;
+    font-size: 18px;
+    height: 45px;
+    margin-bottom: 13px;
+    border-radius: 20px;
+    border: 2px solid #0080ed;
+}
+form [type="submit"] {
+    background-color: #0080ed;
+    color: white;
+}
+form [type="submit"]:hover {
+    cursor: pointer;
+}
+
+main .container-main img{
+    width: 600px;
+}
+
+/* CARDS */
+
+.cards {
+    width: 90%;
+    max-width: 980px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.text--medium{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: rgb(187,185,185);
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px -4px #000000;
+    transition: all 0.3s ease 0s;
+}
+
+.card:hover{
+    transform: translateY(-7px);
+}
+
+.image {
+    width: 100%;
+    padding-top: 56.25%;
+    overflow: hidden;
+    position: relative;
+}
+
+.image img{
+    position: absolute;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.content {
+    margin:20px;
+}
+
+.title{
+    margin-bottom:0px;
+}
+
+.desafio {
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    height:400px;
+    align-items: center;
+    border: 1px solid black;
+    margin: 100px auto;
+    max-width: 980px;
+}
+
+/*FOOTER*/
+footer {
+    background: linear-gradient(60deg, #0080ed 1%, rgb(34, 34, 254) 99%);
+    margin-top: 100px;
+    padding: 8px 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+#contacts .img img {
+    margin: 10px -5% 20px;
+    width: 150px;
+    height: auto;
+}
+
+#contacts .dados img {
+    max-width: 17px;
+    height: auto;
+    transition: .4s;
+}
+
+#contacts .dados .min img {
+    max-width: 21px;
+    height: auto;
+}
+
+#contacts .dados img:hover {
+    background-color: rgb(147, 202, 250);
+    border-radius: 4px;
+}
+
+#contacts .dados .min:hover img {
+    border-radius: 50%;
+}
+
+.dados {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+#media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#media .img_media li {
+    list-style-type: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#contacts .contact ul, #contacts .contact a, #contacts .contact p {
+    list-style-type: none;
+    text-decoration: none;
+    color: #000000;
+    letter-spacing: 1px;
+    text-align: center;
+    transition: .5s;
+}
+
+.contact p, .social_media p {
+    font-weight: 700;
+}
+
+.contact li {
+    margin-top: 4px;
+    font-weight: 600;
+    font-size: 13px;
+}
+#contacts .contact img {
+    width: 12px;
+    height: auto;
+    margin-right: 4px;
+}
+
+#contacts .contact a:hover {
+    color: rgb(147, 202, 250);
+}
+
+#contacts #footer {
+    margin: 22px 0 12px;
+    text-align: center;
+    font-size: 13px;
+    word-spacing: 6px;
+    font-weight: 600;
+    color: #111;
+}
