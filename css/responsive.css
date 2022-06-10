@@ -108,4 +108,10 @@
     #footer p {
         font-size: 11px;
     }
+    #container, #container .text {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 26px;
+    }
 }
